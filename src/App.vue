@@ -1,5 +1,7 @@
 <script setup>
+    import TechStacks from './components/TeckStack.vue';
 	import meImage from '@/assets/img/me.jpg';
+    import TechStackItems from './data/TechStacks';
 </script>
 
 <template>
@@ -30,120 +32,23 @@
         <section class="skills">
             <h2>Tech Stacks.🔥 <p>List of my Programming Technologies and Toolsets:</p></h2>
             
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="./assets/img/tech/laravel.jpg" alt="">
-                    <p>Laravel</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/php.png" alt="">
-                    <p>PHP</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/rest.jpg" alt="">
-                    <p>REST</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/pusher.png" alt="">
-                    <p>Pusher</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/axios.png" alt="">
-                    <p>Axios</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/ajax.png" alt="">
-                    <p>Ajax</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/websocket.png" alt="">
-                    <p>WebSocket</p>
-                </div>
-            </div>
+            <TechStacks :items="TechStackItems.server"/>
 
             <hr class="style-three">
 
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="./assets/img/tech/vue.jpg" alt="">
-                    <p>VueJS</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/pinia.png" alt="">
-                    <p>Pinia</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/vuex.png" alt="">
-                    <p>Vuex</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/quasar.png" alt="">
-                    <p>Quasar</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/tailwind.png" alt="">
-                    <p>Tailwind</p>
-                </div>
-            </div>
+            <TechStacks :items="TechStackItems.frameworks"/>
 
             <hr class="style-three">
 
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="./assets/img/tech/html.png" alt="">
-                    <p>HTML</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/css.png" alt="">
-                    <p>CSS</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/javascript.png" alt="">
-                    <p>JS</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/scss.png" alt="">
-                    <p>SCSS</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/bootstrap.png" alt="">
-                    <p>Bootstrap</p>
-                </div>
-            </div>
+            <TechStacks :items="TechStackItems.client"/>
 
             <hr class="style-three">
 
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="./assets/img/tech/mysql.png" alt="">
-                    <p>MySQL</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/firebase.png" alt="">
-                    <p>Firebase</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/git.png" alt="">
-                    <p>GIT</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/github.png" alt="">
-                    <p>Github</p>
-                </div>
-            </div>
+            <TechStacks :items="TechStackItems.database"/>
 
             <hr class="style-three">
 
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="./assets/img/tech/shopify.jpg" alt="">
-                    <p>Shopify</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./assets/img/tech/wordpress.png" alt="">
-                    <p>Wordpress</p>
-                </div>
-            </div>
+            <TechStacks :items="TechStackItems.cms"/>
         </section>
 
         <section class="projects">
