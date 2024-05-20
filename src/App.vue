@@ -1,7 +1,10 @@
 <script setup>
-    import TechStacks from './components/TeckStack.vue';
+    import TechStacks from '@/components/TeckStack.vue';
+    import ProjectList from '@/components/ProjectList.vue';
+    import ProjectDrawer from '@/components/ProjectDrawer.vue';
 	import meImage from '@/assets/img/me.jpg';
-    import TechStackItems from './data/TechStacks';
+    import TechStackItems from '@/data/TechStacks';
+    import ProjectListItems from '@/data/ProjectList';
 </script>
 
 <template>
@@ -16,7 +19,8 @@
 
         <p>
             With over 5 years of software development experience.<br>
-            Previously Web Application Developer at <a href="#">RDF Feeds, Livestock & Food Inc</a>.<br>
+            Previously Project Based Web Developer at <a href="#">RDF Feeds, Livestock & Food Inc</a>.<br>
+            Previously Junior Web Application Developer at <a href="#">RDF Feeds, Livestock & Food Inc</a>.<br>
             Previously Wordpress & PHP Developer at <a href="#">IConcept Global Advertising</a>.<br>
             Previously Multimedia Officer at <a href="#">VTG Travel and Tours</a>.
         </p>
@@ -54,50 +58,10 @@
         <section class="projects">
             <h2>Projects.❤️ <p>List of my Experimental and Major Projects:</p></h2>
             
-            <div class="grid-container">
-                <div 
-                    data-bs-toggle="offcanvas" 
-                    data-bs-target="#offcanvasExample" 
-                    aria-controls="offcanvasExample"
-                    class="grid-item" 
-                    style="background: url('./assets/img/projects/freshoptions.png') center/cover no-repeat; filter: grayscale(1);"
-                >
-                    <p>SEDAR RECRUITMENT</p>
-                </div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-            </div>
+            <ProjectList :items="ProjectListItems.projects" />
         </section>
           
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div>
-                    <h3>SEDAR</h3>
-                    <p>Employee Management System</p>
-                    <a href="" target="_blank"><img src="./assets/img/projects/freshoptions.png" alt=""></a>
-                    <p>👉 <a href="http://localhost/portfolio/" target="_blank">http://localhost/portfolio/</a></p>
-                    <p>HR Management system for managing Employee Data, Form Requests, KPI / Grade Evaluation, Masterlists, User Account Management and for storing company files and documents.</p>
-                    <p>Features:</p>
-                    <ul>
-                        <li>Employee Management & Registration</li>
-                        <li>Manpower & Evaluation form Requests</li>
-                        <li>Delete, Edit, Update Masterlists</li>
-                        <li>Request & Approval system</li>
-                    </ul>
-                    <p>🔥 Made with: Laravel, Vue, MySQL, Bootstrap, HTML, CSS, JS</p>
-                </div>
-            </div>
-        </div>
+        <ProjectDrawer />
     </main>
 </template>
 
