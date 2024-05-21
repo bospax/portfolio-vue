@@ -76,7 +76,7 @@ export default {
                 "API endpoints for Metro mobile app."
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'Ajax', 'PHP', 'SQL'],
-            image: 'project_metro.png',
+            image: 'metro.png',
             link: 'https://example.com/project_metro'
         },
         {
@@ -112,7 +112,7 @@ export default {
                 "Search and browse feature."
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'WordPress'],
-            image: 'infinity_eight.png',
+            image: 'infinity.png',
             link: 'https://example.com/infinity_eight'
         },
         {
@@ -145,7 +145,7 @@ export default {
                 "Clients contact form."
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'WordPress'],
-            image: 'smart_strata.png',
+            image: 'strata.png',
             link: 'https://example.com/smart_strata'
         },
         {
@@ -161,7 +161,7 @@ export default {
                 "Contact forms."
             ],
             technologies: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
-            image: 'vtg_travel.png',
+            image: 'vacations.jpg',
             link: 'https://example.com/vtg_travel'
         }
     ]       

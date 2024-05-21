@@ -1,6 +1,6 @@
 <template lang="">
     <div class="grid-container">
-        <div v-for="item in items"
+        <div @click="openDrawer(item)" v-for="item in items"
             data-bs-toggle="offcanvas" 
             data-bs-target="#offcanvasExample" 
             aria-controls="offcanvasExample"
@@ -14,6 +14,7 @@
 
 <script setup>
 import { defineProps } from 'vue';
+import { defineEmits } from 'vue';
 
 const props = defineProps({
     items: {
@@ -22,8 +23,15 @@ const props = defineProps({
     },
 });
 
+const emit = defineEmits(['projectSelected']);
+
 const getImageSrc = (imageName) => {
     return new URL(`../assets/img/projects/${imageName}`, import.meta.url).href;
+};
+
+const openDrawer = (item) => {
+    emit('projectSelected', item);
+    console.log(item);
 };
 
 </script>

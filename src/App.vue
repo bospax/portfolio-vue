@@ -1,12 +1,3 @@
-<script setup>
-    import TechStacks from '@/components/TeckStack.vue';
-    import ProjectList from '@/components/ProjectList.vue';
-    import ProjectDrawer from '@/components/ProjectDrawer.vue';
-	import meImage from '@/assets/img/me.jpg';
-    import TechStackItems from '@/data/TechStacks';
-    import ProjectListItems from '@/data/ProjectList';
-</script>
-
 <template>
 	<main>
         <h1><span>Hello.</span><br>I’m Jose.</h1>
@@ -20,7 +11,7 @@
         <p>
             With over 5 years of software development experience.<br>
             Previously Project Based Web Developer at <a href="#">RDF Feeds, Livestock & Food Inc</a>.<br>
-            Previously Junior Web Application Developer at <a href="#">RDF Feeds, Livestock & Food Inc</a>.<br>
+            Previously Junior Web App Developer at <a href="#">RDF Feeds, Livestock & Food Inc</a>.<br>
             Previously Wordpress & PHP Developer at <a href="#">IConcept Global Advertising</a>.<br>
             Previously Multimedia Officer at <a href="#">VTG Travel and Tours</a>.
         </p>
@@ -58,12 +49,28 @@
         <section class="projects">
             <h2>Projects.❤️ <p>List of my Experimental and Major Projects:</p></h2>
             
-            <ProjectList :items="ProjectListItems.projects" />
+            <ProjectList @projectSelected="handleProjectSelected" :items="ProjectListItems.projects" />
         </section>
           
-        <ProjectDrawer />
+        <ProjectDrawer :item="selectedProject" />
     </main>
 </template>
+
+<script setup>
+    import TechStacks from '@/components/TeckStack.vue';
+    import ProjectList from '@/components/ProjectList.vue';
+    import ProjectDrawer from '@/components/ProjectDrawer.vue';
+    import meImage from '@/assets/img/me.jpg';
+    import TechStackItems from '@/data/TechStacks';
+    import ProjectListItems from '@/data/ProjectList';
+    import { ref } from 'vue';
+
+    const selectedProject = ref({});
+
+    const handleProjectSelected = (item) => {
+        selectedProject.value = item;
+    };
+</script>
 
 <style scoped>
 

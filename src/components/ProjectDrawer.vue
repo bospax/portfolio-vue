@@ -6,26 +6,33 @@
         </div>
         <div class="offcanvas-body">
             <div>
-                <h3>SEDAR</h3>
-                <p>Employee Management System</p>
-                <a href="" target="_blank"><img src="@/assets/img/projects/freshoptions.png" alt=""></a>
-                <p>👉 <a href="http://localhost/portfolio/" target="_blank">http://localhost/portfolio/</a></p>
-                <p>HR Management system for managing Employee Data, Form Requests, KPI / Grade Evaluation, Masterlists, User Account Management and for storing company files and documents.</p>
+                <h3>{{ item.title }}</h3>
+                <a :href="item.link" target="_blank"><img :src="getImageSrc(item.image)" :alt="item.title"></a>
+                <p>👉 <a :href="item.link" target="_blank">{{ item.link }}</a></p>
+                <p>{{ item.description }}</p>
                 <p>Features:</p>
-                <ul>
-                    <li>Employee Management & Registration</li>
-                    <li>Manpower & Evaluation form Requests</li>
-                    <li>Delete, Edit, Update Masterlists</li>
-                    <li>Request & Approval system</li>
+                <ul v-for="feature in item.features">
+                    <li>{{ feature }}</li>
                 </ul>
-                <p>🔥 Made with: Laravel, Vue, MySQL, Bootstrap, HTML, CSS, JS</p>
+                <p>🔥 Made with: <span v-for="(tech, index) in item.technologies" :key="index">{{ tech }}{{ index !== item.technologies.length - 1 ? ', ' : '' }}</span></p>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-    
+    import { defineProps } from 'vue';
+
+    const props = defineProps({
+        item: {
+            type: Object,
+            required: true,
+        }
+    });
+
+    const getImageSrc = (imageName) => {
+        return new URL(`../assets/img/projects/${imageName}`, import.meta.url).href;
+    };
 </script>
 
 <style lang="">
