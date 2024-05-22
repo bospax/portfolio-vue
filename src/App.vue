@@ -21,6 +21,7 @@
             <a href="mailto:josedpachecojr@gmail.com">Email</a>, 
             <!-- <a href="#">GitHub</a>,  -->
             <a target="_blank" href="https://www.linkedin.com/in/josepachecojr">LinkedIn</a>.
+            <br>View my CV here: 
             <br>Full name is Jose Pacheco Jr. Nice to meet you.
         </p>
 
