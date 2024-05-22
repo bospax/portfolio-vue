@@ -12,10 +12,10 @@ export default {
             name: 'REST',
             image: 'rest.jpg'
         },
-        {
-            name: 'Pusher',
-            image: 'pusher.png'
-        },
+        // {
+        //     name: 'Pusher',
+        //     image: 'pusher.png'
+        // },
         {
             name: 'Axios',
             image: 'axios.png'
@@ -24,34 +24,38 @@ export default {
             name: 'Ajax',
             image: 'ajax.png'
         },
-        {
-            name: 'Websocket',
-            image: 'websocket.png'
-        }
+        // {
+        //     name: 'Websocket',
+        //     image: 'websocket.png'
+        // }
     ],
-    frameworks: [
+    // frameworks: [
+    //     {
+    //         name: 'VueJS',
+    //         image: 'vue.jpg'
+    //     },
+    //     {
+    //         name: 'Pinia',
+    //         image: 'pinia.png'
+    //     },
+    //     {
+    //         name: 'Vuex',
+    //         image: 'vuex.png'
+    //     },
+    //     {
+    //         name: 'Quasar',
+    //         image: 'quasar.png'
+    //     },
+    //     {
+    //         name: 'Tailwind',
+    //         image: 'tailwind.png'
+    //     }
+    // ],
+    client: [
         {
             name: 'VueJS',
             image: 'vue.jpg'
         },
-        {
-            name: 'Pinia',
-            image: 'pinia.png'
-        },
-        {
-            name: 'Vuex',
-            image: 'vuex.png'
-        },
-        {
-            name: 'Quasar',
-            image: 'quasar.png'
-        },
-        {
-            name: 'Tailwind',
-            image: 'tailwind.png'
-        }
-    ],
-    client: [
         {
             name: 'HTML',
             image: 'html.png'
@@ -78,10 +82,10 @@ export default {
             name: 'MySQL',
             image: 'mysql.png'
         },
-        {
-            name: 'Firebase',
-            image: 'firebase.png'
-        },
+        // {
+        //     name: 'Firebase',
+        //     image: 'firebase.png'
+        // },
         {
             name: 'GIT',
             image: 'git.png'

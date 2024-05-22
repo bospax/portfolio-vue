@@ -31,9 +31,9 @@
 
             <hr class="style-three">
 
-            <TechStacks :items="TechStackItems.frameworks"/>
+            <!-- <TechStacks :items="TechStackItems.frameworks"/>
 
-            <hr class="style-three">
+            <hr class="style-three"> -->
 
             <TechStacks :items="TechStackItems.client"/>
 

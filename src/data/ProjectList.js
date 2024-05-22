@@ -22,7 +22,7 @@ export default {
             ],
             technologies: ['Laravel', 'Vue', 'MySQL', 'JQuery', 'Bootstrap', 'HTML', 'CSS', 'JS'],
             image: 'recruitment.png',
-            link: 'https://example.com/sedar_recruitment'
+            link: 'https://rdfsedar.com/'
         },
         {
             id: 2,
@@ -41,7 +41,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'Ajax', 'PHP', 'SQL'],
             image: 'policy.png',
-            link: 'https://example.com/sedar_policy'
+            link: 'https://cedar.rdfmis.ph/'
         },
         {
             id: 3,
@@ -60,7 +60,7 @@ export default {
             ],
             technologies: ['CSS', 'JS', 'jQuery', 'Shopify CMS'],
             image: 'freshoptions.png',
-            link: 'https://example.com/fresh_options'
+            link: 'https://freshoptions.ph/'
         },
         {
             id: 4,
@@ -77,7 +77,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'Ajax', 'PHP', 'SQL'],
             image: 'metro.png',
-            link: 'https://example.com/project_metro'
+            link: 'https://metro.rdfmis.ph/'
         },
         {
             id: 5,
@@ -98,7 +98,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'Ajax', 'PHP', 'SQL'],
             image: 'apollo.png',
-            link: 'https://example.com/apollo'
+            link: 'https://apollo.rdfmis.ph/'
         },
         {
             id: 6,
@@ -113,7 +113,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'WordPress'],
             image: 'infinity.png',
-            link: 'https://example.com/infinity_eight'
+            link: 'https://infinityeighttrading.com/'
         },
         {
             id: 7,
@@ -130,7 +130,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'WordPress'],
             image: 'rayomarine.png',
-            link: 'https://example.com/rayomarine'
+            link: 'https://www.rayomarine.com/'
         },
         {
             id: 8,
@@ -146,7 +146,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'WordPress'],
             image: 'strata.png',
-            link: 'https://example.com/smart_strata'
+            link: 'https://smartstrata.com/'
         },
         {
             id: 9,
@@ -162,7 +162,7 @@ export default {
             ],
             technologies: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
             image: 'vacations.jpg',
-            link: 'https://example.com/vtg_travel'
+            link: 'https://www.behance.net/bospax'
         }
     ]       
 }

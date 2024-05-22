@@ -191,6 +191,12 @@ hr.style-three {
   width: 500px;
 }
 
+.offcanvas-body {
+  flex-grow: 1;
+  padding: 1rem 3rem;
+  overflow-y: auto;
+}
+
 @media screen and (max-width: 800px) {
   h1 {
       font-size:80px;

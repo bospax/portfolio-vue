@@ -31,7 +31,6 @@ const getImageSrc = (imageName) => {
 
 const openDrawer = (item) => {
     emit('projectSelected', item);
-    console.log(item);
 };
 
 </script>
