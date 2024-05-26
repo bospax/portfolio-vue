@@ -147,6 +147,7 @@ section {
   width: 200px;
   height: 150px;
   border-radius: 5px;
+  border: solid #057c05;
 }
 
 .projects .grid-item:hover {

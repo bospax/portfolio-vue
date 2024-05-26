@@ -26,7 +26,9 @@
         </p>
 
         <section class="skills">
-            <h2>Tech Stacks.🔥 <p>List of my Programming Technologies and Toolsets:</p></h2>
+            <h2>Tech Stacks.🔥 
+                <p>Here are my diverse arsenal of programming technologies and toolsets, over years of hands-on experience. From mastering frontend frameworks like VueJS to leveraging the power of Laravel for backend development, my skill set encompasses a wide range of tools designed to create seamless and efficient web applications. </p>
+            </h2>
             
             <TechStacks :items="TechStackItems.server"/>
 
@@ -48,7 +50,9 @@
         </section>
 
         <section class="projects">
-            <h2>Projects.❤️ <p>List of my Experimental and Major Projects:</p></h2>
+            <h2>Projects.❤️ 
+                <p>Browse through my collection of experimental and major projects. This portfolio showcases my dedication to pushing the limits and creating impactful solutions in the world of software development.</p>
+            </h2>
             
             <ProjectList @projectSelected="handleProjectSelected" :items="ProjectListItems.projects" />
         </section>
