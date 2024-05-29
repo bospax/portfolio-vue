@@ -131,21 +131,21 @@ section {
 }
 
 .skills .grid-item img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   filter: grayscale(1);
 }
 
 .projects .grid-item {
-  flex: 0 0 calc(20%);
+  flex: 0 0 calc(30%);
   background-color: #a0a0a0;
   color: #ffffff;
   text-align: center;
   padding: 20px;
   font-size: 18px;
   width: 200px;
-  height: 150px;
+  height: 200px;
   border-radius: 5px;
   border: solid #057c05;
 }
